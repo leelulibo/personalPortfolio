@@ -14,7 +14,7 @@
 :root {
     --bg-color: #e0f7fa; /* Soft green color */
     --second-bg-color: #323946;
-    --text-color: #555; /* Slightly darker gray color for text */
+    --text-color: #020101; /* Slightly darker gray color for text */
     --main-colur: #ff1493; /* Pink color */
 }
 
@@ -279,4 +279,13 @@ section{
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+}
+
+.contact p {
+    margin-bottom: 3rem;
+    color: var(--second-bg-color);
+    font-size: 1.6rem;
+    gap: 2rem;
+
+
 }
