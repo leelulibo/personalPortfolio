@@ -257,9 +257,26 @@ section{
     background: var(--bg-color);
 }
 
-.about-img img {
-    width: 35vw;
+.about-img {
+    display: flex;
+    justify-content: space-around; /* Adjust this property based on your preference */
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: row; /* Set the direction to horizontal */
 
+}
+
+
+.about-img img {
+    max-width: 50%; /* Set maximum width to 100% of the container */
+    height: auto;    /* Maintain aspect ratio */
+    max-height: 200px; /* Set a maximum height if needed */
+    margin-bottom: 5px; /* Add some space between each image */
+    
+}
+
+.about-img img:last-child {
+    margin-right: 0; /* Remove right margin for the last image */
 }
 
 .heading {
@@ -283,7 +300,7 @@ section{
 
 .contact p {
     margin-bottom: 3rem;
-    color: var(--second-bg-color);
+    color: var(--main-colur);
     font-size: 1.6rem;
     gap: 2rem;
 
