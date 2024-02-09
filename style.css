@@ -12,7 +12,7 @@
 }
 
 :root {
-    --bg-color: #e0f7fa; /* Soft green color */
+    --bg-color: #FFB6C1; /* Soft green color */
     --second-bg-color: #323946;
     --text-color: #020101; /* Slightly darker gray color for text */
     --main-colur: #ff1493; /* Pink color */
@@ -170,7 +170,7 @@ section{
 
 .logo{
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: var(--main-colur);
     font-weight: 600;
     cursor: default;
 
@@ -333,9 +333,11 @@ section{
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--bg-color);
-    background: #FFB6C1;
+    background: #ff11112a;
     border-radius: .8rem;
     margin: .7rem 0;
+    color: var(--text-color);
+
 }
 
 /* .contact form .input-box{
