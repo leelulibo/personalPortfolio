@@ -20,8 +20,6 @@
 
 
 
-
-
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -36,6 +34,7 @@ body {
 section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
+    
 
 }
 
@@ -153,8 +152,6 @@ section{
 
 }
 
-
-
 .header {
     position: fixed;
     top: 0;
@@ -162,6 +159,7 @@ section{
     width: 100%;
     padding: 2rem 9%;
     background: var(--bg-color);
+    /* background-image: url('images/Pink5.jpg'); */
     display: flex;
     justify-content: space-between;
     align-items: centre;
@@ -181,6 +179,7 @@ section{
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
+    float: right;
 }
 
 .navbar a:hover,
@@ -202,6 +201,8 @@ section{
 
 .home-img img {
     width: 35vw;
+    float: left;
+
 }
 
 .home-content h3{
@@ -285,12 +286,14 @@ section{
 
 .heading {
     text-align: centre;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
+    color: #ff1493;
 }
 
-.about-content h2 {
-    text-align: left;
+.about-content h6 {
+    text-align: center;
     line-height: 1.2;
+    text-decoration: underline;
 }
 
 .about-content h3 {
@@ -300,7 +303,15 @@ section{
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    font-style: italic;
+    text-align: center;
 }
+/* .about .navbar{
+    float: right;
+} */
+.channel{
+    text-align: center;
+} 
 
 .contact h2 {
     margin-bottom: 3rem;
