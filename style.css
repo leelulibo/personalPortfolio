@@ -233,7 +233,7 @@ section{
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: .2em solid var(--main-colur);
+    border: .2em solid orange;
     border-radius: 50%;
     font-size: 2rem;
     color: orange;
@@ -244,11 +244,11 @@ section{
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background:  #F4CCCC;
+    background:  peachpuff;
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-colur);
+    box-shadow: 0 0 1rem orange;
     font-size: 1.6rem;
-    color: var(--second-bg-color);
+    color: orange;
     letter-spacing: 600;
     font-weight: 600;
     transition: .5s ease;
@@ -391,11 +391,13 @@ resize: none;
     background-color: #F4CCCC;
 } */
 
-.details{
-    color: black;
-}
+/* .details{
+    color: orange;
+    text-align: center;
+} */
 .heading{
-    color: #020101;
+    color: orange;
+    text-align: center;
 }
 .full-width {
     width: 100%;
