@@ -26,8 +26,12 @@ html {
 }
 
 body {
-    background:;
-    color: var(--text-color);
+    /* background-image: url(images/pinkish.jpg);
+     */
+     background-color: peachpuff;
+    background-repeat: no-repeat;
+
+    color: ;
 
 }
 
@@ -70,7 +74,7 @@ section{
 
 .navbar a:hover,
 .navbar a,:active {
-    color: or
+    color: white
 }
 
 #menu-icon {
@@ -158,7 +162,7 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background-color: peachpuff;
+    background-color: white;
     /* background-image: url('images/Pink5.jpg'); */
     display: flex;
     justify-content: space-between;
@@ -405,6 +409,6 @@ resize: none;
     background-color: white;
 }
 .footer{
-    background-color: peachpuff;
+    background-color: white;
     height: 50%;
 }
