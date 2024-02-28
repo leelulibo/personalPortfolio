@@ -7,37 +7,93 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
 
 </head>
-<header>
-    <ul>
+<style>
+    .more-content {
+        display: none; /* Hide the additional content by default */
+    }
+    .about-image figcaption p {
+            font-size: 1.7em; /* Increase text size */
+            font-style: italic; /* Add italic style */
+        }
+</style>
+
+<header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <i class='bx bx-menu' id="menu-icon"></i> 
+
     <nav class="navbar">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contacts</a>
         <a href="project.html">Projects</a>
-    </ul>
+
+        
     </nav>
+        
+</header> 
+<section>
+    <div class="about-content">
+        <h1 class="heading">About <span></span></h1>
 
-</header>
+    </div>
+    
+     <div class="container">
+        <section class="About">
+            <figure class="about-image">
+                <figcaption>
+                    <img src="images/WhatsApp_Image_2024-01-17_at_23.15.14-removebg-preview.png" alt="">
+                    <p >I'm Lulibo Mtampu, a dynamic and passionate software developer on a mission to weave innovation into the fabric of technology.
+                        <span class="more-content">With a versatile skill set spanning Java, JavaScript, HTML, CSS, SQL, and more, I thrive on transforming challenges into opportunities through hands-on experience with real-time projects. My journey in technology has been a thrilling ride, marked by a profound interest in databases and an unwavering commitment to ensuring data security. Beyond coding, my background in management and marketing has sculpted my communication skills, allowing me to take up leadership roles on campus. Currently, I proudly serve as a technical mentor and lead the vibrant Womethinkcode community, fostering collaborative learning environments. My curiosity extends into cloud engineering and the fascinating realm of cybersecurity, where I explore the dynamic field of networking and securing networks. Always ready to explore new concepts and technologies, I find joy in staying on my toes and being at the forefront of innovation. In addition to my technical endeavors, I run the WomenInTech channel, inspired by my dedication to breaking barriers and creating a supportive community for women in technology. I believe in continuous learning and staying ahead of the curve, and I am open to exciting opportunities that allow me to expand my knowledge, contribute to meaningful projects, and connect with like-minded professionals who share a passion for innovation. Let's embark on this journey together!</span></p>
+                        <a href="#" class="btn" id="toggle-content">Read More</a>
 
-<div class="about-content">
-    <h6 class="heading">About <span></span></h2>
-   
+                    </figcaption>
+                
+            </figure>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById('toggle-content').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            var moreContent = document.querySelector('.more-content');
+            if (moreContent.style.display === 'none') {
+                moreContent.style.display = 'inline'; // Show the additional content
+                event.target.textContent = 'Read Less'; // Change button text
+            } else {
+                moreContent.style.display = 'none'; // Hide the additional content
+                event.target.textContent = 'Read More'; // Change button text
+            }
+        });
+    </script>
+
+    
+    
+<!-- <div class="about-content">
+    <h3>Software Developer</h3>
+    <p>
+        My journey in technology has been a thrilling ride, marked by a profound interest in databases and an unwavering commitment to ensuring data security. Beyond coding, my background in management and marketing has sculpted my communication skills, allowing me to take up leadership roles on campus. Currently, I proudly serve as a technical mentor and lead the vibrant Womethinkcode community, fostering collaborative learning environments.
+        My curiosity extends into cloud engineering and the fascinating realm of cybersecurity, where I explore the dynamic field of networking and securing networks. Always ready to explore new concepts and technologies, I find joy in staying on my toes and being at the forefront of innovation.
+        In addition to my technical endeavors, I run the WomenInTech channel, inspired by my dedication to breaking barriers and creating a supportive community for women in technology. I believe in continuous learning and staying ahead of the curve, and I am open to exciting opportunities that allow me to expand my knowledge, contribute to meaningful projects, and connect with like-minded professionals who share a passion for innovation. Let's embark on this journey together!
+    </p> -->
+<!-- </div> -->
+</section>
+<!--    
     <figure>
     <!-- <h3>Software Developer</h3> -->
-
-    <figcaption>
+ 
+    <!-- <figcaption>
         <div id="content-summary">
             <p>
                 I'm Lulibo Mtampu, a dynamic and passionate software developer on a mission to weave innovation into the fabric of technology. With a versatile skill set spanning Java, JavaScript, HTML, CSS, SQL, and more, I thrive on transforming challenges into opportunities through hands-on experience with real-time projects.
             </p>
             <p>
                 My journey in technology has been a thrilling ride, marked by a profound interest in databases and an unwavering commitment to ensuring data security. Beyond coding, my background in management and marketing has sculpted my communication skills, allowing me to take up leadership roles on campus. Currently, I proudly serve as a technical mentor and lead the vibrant Womethinkcode community, fostering collaborative learning environments.
-            </p>
-            <!-- Add more content summary here if needed -->
+            </p> 
         </div>
-        <div id="content-full" style="display: none;">
+            <div id="content-full" style="display: none;">
             <p>
                 My curiosity extends into cloud engineering and the fascinating realm of cybersecurity, where I explore the dynamic field of networking and securing networks. Always ready to explore new concepts and technologies, I find joy in staying on my toes and being at the forefront of innovation.
             </p>
@@ -46,9 +102,9 @@
             </p>
         </div>
         <a href="#" class="btn" id="toggle-content">Read More</a>
-    </figcaption>
-    
-    <footer>
+    </figcaption> -->
+
+    <!-- <footer>
          <div class="about-img">
         <div><img src="images/images-removebg-preview(1).png" alt="Slide 1"></div>
         <div><img src="images/731_java-removebg-preview.png" alt="Slide 2"></div>
@@ -56,11 +112,11 @@
         <div><img src="images/logo-css-3-1536-removebg-preview.png" alt="Slide 3"></div>
         <div><img src="images/logoimage.png" alt="Slide 3"></div>
         <!--Copy write-->
-        <div class="copywrite">
+        <!-- <div class="copywrite">
             <hr>
-            <p> Women_In_Tech &#169;</p>
-    
-        </div>
+            <p> Women_In_Tech &#169;</p> -->
+     
+        <!-- </div>
         </footer>
 
         <script>
@@ -80,6 +136,6 @@
                     }
                 });
             });
-        </script>
-        
+        </script> -->
+      
 </html>

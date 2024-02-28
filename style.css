@@ -147,9 +147,6 @@ span {
 }
 
 
-
-
-
 section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
@@ -184,6 +181,7 @@ section{
     margin-left: 4rem;
     transition: .3s;
     float: right;
+    text-decoration: none;
 }
 
 .navbar a:hover,
@@ -206,7 +204,8 @@ section{
 .home-img img {
     width: 35vw;
     float: left;
-    border-radius: 50%;
+    border-radius: 10%;
+    
 
 }
 
@@ -258,36 +257,58 @@ section{
 .btn:hover {
     box-shadow: none;
 }
+.service h2{
+    margin-bottom: 5rem;
+}
 
-.about {
+.service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+
+}
+.service-container .service-box{
+    flex:1 1 30rem;
+    background-color: #020101;
+    padding:3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border:.2rem solid white;
+    
+
+}
+
+/* .about {
     display: flex;
     justify-content: centre;
     align-items: centre;
     gap: 2rem;
     background: var(--bg-color);
-}
+} */
 
-.about-img {
+/* .about-img {
     display: flex;
     justify-content: space-around; /* Adjust this property based on your preference */
-    align-items: center;
+    /* align-items: center;
     margin-top: 20px;
-    flex-direction: row; /* Set the direction to horizontal */
+    flex-direction: row; Set the direction to horizontal */
 
-}
+} */
 
 
-.about-img img {
+/* .about-img img {
     max-width: 50%; /* Set maximum width to 100% of the container */
-    height: auto;    /* Maintain aspect ratio */
-    max-height: 200px; /* Set a maximum height if needed */
-    margin-bottom: 5px; /* Add some space between each image */
-    
+    /* height: auto;    /* Maintain aspect ratio */
+    /* max-height: 200px; Set a maximum height if needed */
+    /* margin-bottom: 5px; Add some space between each image */
+     */ */
 }
-
+/* 
 .about-img img:last-child {
     margin-right: 0; /* Remove right margin for the last image */
-}
+} */
 
 .heading {
     text-align: centre;
@@ -295,7 +316,7 @@ section{
     color: #ff1493;
 }
 
-.about-content h6 {
+/* .about-content h6 {
     text-align: center;
     line-height: 1.2;
     text-decoration: underline;
@@ -310,7 +331,7 @@ section{
     margin: 2rem 0 3rem;
     font-style: italic;
     text-align: center;
-}
+} */
 /* .about .navbar{
     float: right;
 } */
@@ -386,10 +407,13 @@ resize: none;
 
 }
 
-/* .footer{
+.footer{
     text-align: center;
-    background-color: #F4CCCC;
-} */
+    background-color: white;
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+} 
 
 /* .details{
     color: orange;
@@ -413,4 +437,7 @@ resize: none;
 .footer{
     background-color: white;
     height: 50%;
+}
+.details{
+    text-decoration-color: orange;
 }
