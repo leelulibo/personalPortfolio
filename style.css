@@ -259,6 +259,8 @@ section{
 }
 .service h2{
     margin-bottom: 5rem;
+    font-size: xx-large;
+    color: #020101;
 }
 
 .service-container{
@@ -269,16 +271,35 @@ section{
     gap:2rem;
 
 }
-.service-container .service-box{
+.service-box{
     flex:1 1 30rem;
-    background-color: #020101;
+    background-color:white;
     padding:3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border:.2rem solid white;
+    border:.2rem solid  orange;
+    transition: .5s ease;
+}
+
+.service-box:hover{
+    border-color: black;
+    transform: scale(1.02);
     
+}
+.service-box i{
+    font-size: 7rem;
+    color: orange;
 
 }
+.service-box h3{
+    font-size: 2.6rem;
+}
+
+.service-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
 
 /* .about {
     display: flex;
@@ -437,7 +458,11 @@ resize: none;
 .footer{
     background-color: white;
     height: 50%;
+    padding-top: 1%;
 }
 .details{
     text-decoration-color: orange;
+}
+.details p{
+    color: orange;
 }
