@@ -564,7 +564,6 @@ p{
         height: 100%;
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
-        margin-bottom: 200px;
      }
 
      .box:hover .content{

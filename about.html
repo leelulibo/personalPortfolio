@@ -18,7 +18,24 @@
     text-align: center; /* Centers the caption text */
     max-width: 100%; /* Allow caption to take full width */
     margin: 0 auto; /* Centers the caption within the figure element */
+    margin-bottom: 50%;
   }
+  .lang i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    background: transparent;
+    /* border: .20em solid orange; */
+    border-radius:10%;
+    font-size: 2rem;
+    color: orange;
+    margin-right: 10%; /* Adjust margin-right for space between icons */
+    margin-left: 10%;
+    transition: .5s ease;
+  }
+
   </style>
 <head> 
     <meta charset="UTF-8">
@@ -63,9 +80,12 @@
         <!-- </section> -->
     <!-- </div>
      -->
-
+     
+    </div>
      <section class="services" id="services">
-        <h1 class="heading" style="font-size: 5rem; font-style: italic;">About Me</h1>
+        <strong><h1 class="heading" style="font-size: 5rem; font-style: italic;">About Me</h1></strong>
+         <div class="details">
+            
         <div class="box-container">
         <figure> 
           <div class="box">
@@ -100,16 +120,23 @@
             <img src="images/java.png">
             <img src="images/Js.jpeg">
         </div> -->
-        <img src="images/footer.png">
-        <p>Delving into content creation on my YouTube channel, WomenInTech, is a passion of mine, driven by the desire to inspire young women especially of color,by demonstrating that succeeding in the tech industry is not only attainable but also empowering.Through this platform, I aim to provide a beacon of representation and encouragement, sharing insights and experiences that reflect the diverse and inclusive nature of the technology sector.channel serves as a testament to the potential and capability of women in tech, showcasing their contributions and achievements while dismantling stereotypes and barriers.Ultimately, my aspiration is for viewers to find inspiration and confidence in pursuing their own journeys in the tech field, knowing that they too can make significant strides and impact within the industry. <a href="https://www.youtube.com/@Women_In_Tech" target="_blank">
-            <input type="submit" value="Subscribe" class="btn" style="font-size: 80%; background-color:white;">
+
+        <img src="images/footer.png ";>
+        <p style="color: black;">Delving into content creation on my YouTube channel, WomenInTech, is a passion of mine, driven by the desire to inspire young women especially of color,by demonstrating that succeeding in the tech industry is not only attainable but also empowering.Through this platform, I aim to provide a beacon of representation and encouragement, sharing insights and experiences that reflect the diverse and inclusive nature of the technology sector.channel serves as a testament to the potential and capability of women in tech, showcasing their contributions and achievements while dismantling stereotypes and barriers.Ultimately, my aspiration is for viewers to find inspiration and confidence in pursuing their own journeys in the tech field, knowing that they too can make significant strides and impact within the industry. <a href="https://www.youtube.com/@Women_In_Tech" target="_blank">
+            <input type="submit" value="Subscribe" class="btn" style="font-size: 80%; background-color:white;border: .2em solid var(--main-colur);
+            ">
         </a>
         </p>
 
     </section>
       
 </section>
-
+<div class="lang">
+    <i class='bx bxl-python'></i>
+    <i class='bx bxl-java'></i>
+    <i class='bx bxl-javascript'></i>
+    <i class='bx bxs-data'></i>
+    
 <footer class="footer">
     <div>
         <!-- <h4 class="heading">Contact details</h4> -->
