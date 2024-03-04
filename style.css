@@ -501,6 +501,12 @@ p{
     background-position: center;
     background-size: cover;
 }
+.lang img {
+    width: 150px; /* Adjust the width as needed */
+    margin-right: 100px; /* Adjust the margin between images */
+    display: inline-block; /* Align images horizontally */
+
+}
 
 
 
